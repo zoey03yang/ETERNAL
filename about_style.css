@@ -7,7 +7,7 @@
     line-height: 1.4em;
 }
 body{
-  background-color: #D9D7CC;
+  background-color: #504A59;
 }
 /************************************************** header */
 .eternal_header {
@@ -176,134 +176,78 @@ body{
   .copyright{
     font-size: 5px;
   }
-  /******************************************shopping_bag_page */
-  .shopping_bag_page{
-    display: flex;
+  /* ****************************************about_eternal */
+  .about_eternal_all{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
   }
-  .shopping_all{
-    width: 50%;
-    margin: 50px 0 50px 0;
-  }
-  .shopping_product{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 2%;
-    border-bottom: #504A59 1px solid;
-  }
-  .product_pic{
-    width: 100px;
-  }
-  .product_pic img{
-    width: 100%;
-  }
-  .product_name_about_price{
-    width: 60%; 
-  }
-  .product_name{
+  .title h2{
     font-size: 16px;
-    margin-top: 2%;
-  }
-  .product_about{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-  }
-  .product_price{
-    margin-top: 10%;
-    text-align: right;
-  }
-  .quantity{
-    background-color: #D9D7CC;
-    border: none;
-    outline: none;
-  }
-  /* ******************************************checkout */
-  .checkout{
-    width: 50%;
-    background-color: #504A59;
     color: #D9D7CC;
-    padding: 50px 0 50px 0;
   }
-  .checkout_item{
+  .col-4{
+    width: 20%;
+  }
+  .col-8{
     width: 80%;
-    height: 550px;
-    margin-left: 5%;
+  }
+  .list-group-item-action{
+    font-size: 16px;
+    margin-top: 30%;
+    background-color: #504A59;
+    color: #D9D7CC;
+    border: none;
+    border-radius: none;
+    text-decoration: none;
+  }
+  .list-group-item-action:hover{
+    background-color: #504A59;
+    color: #D9D7CC;
+    text-decoration: underline;
+  }
+  #about_pic01{
+    width: 700px;
+  }
+  #about_pic02,
+  #about_pic03,
+  #about_pic04{
+    width: 700px;
+  }
+  #about_pic01 img,
+  #about_pic02 img,
+  #about_pic03 img,
+  #about_pic04 img{
+   width: 100%;
+  }
+  .scrollspy-example h4{
+    margin-top: 3%;
+  }
+  #list-example{
+    border-right: 1px solid #D9D7CC;
+    height: 450px;
     position: sticky;
-    top: 100px;
+    top: 0;
   }
-  .checkout_mode{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #D9D7CC;
+  .title_text{
+    font-size: 14px;
+    color: #D9D7CC;
   }
-  .choose{
+  .about_text{
+    color: #D9D7CC;
+    font-size: 12px;
+    padding-bottom: 10%;
+  }
+  .work_btn{
     background-color: #504A59;
     color: #D9D7CC;
-    outline: none;
-    text-align: center;
-  }
-  .supermarket_chose{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #D9D7CC;
-  }
-  .supermarket_chose_btn{
-    padding: 1px 5px;
-    background-color: #504A59;
-    color: #D9D7CC;
+    padding: 1%;
     border: 1px solid #D9D7CC;
-    margin-top: 8px;
-  }
-  .supermarket_chose_btn:hover{
-    background-color: #D9D7CC;
-    color: #504A59;
-  }
-  .price_sum{
-    justify-content: space-between;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #D9D7CC;
-  }
-  .product_sum{
-    display: flex;
-    justify-content: space-between;
-  }
-  .price_total{
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 3%;
+    border-radius: 5px;
   }
-  .next{
-    margin-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .checkout_next{
-    width: 100%;
-    height: 30px;
-    background-color: #504A59;
-    color: #D9D7CC;
-    border: 1px solid #D9D7CC;
-  }
-  .checkout_next:hover{
+  .work_btn:hover{
     background-color: #D9D7CC;
     color: #504A59;
   }

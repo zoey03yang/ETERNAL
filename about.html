@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="about_style.css">
 </head>
 <body>
     <header class="eternal_header">
@@ -65,48 +65,69 @@
                 <input type="search" id="search" placeholder="Search搜尋">
             </div>
             <div class="member">
-                <a href="#"><img src="icon/user.png" alt="member"></a>
+                <a href="login.html"><img src="icon/user.png" alt="member"></a>
             </div>
             <div class="shopping_bag">
                 <a href="shopping_bag.html"><img src="icon/shopping_bag.png" alt="shopping_bag"></a>
             </div>
         </div>
     </header>
-    <section class="login">
-        <div class="login_page">
-            <div class="login_menu">
-                <div class="login_title">
-                    <h3 class="login_welcome">Welcome back</h3>
+    <section class="about_eternal_all">
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <div class="title">
+                    <h2 >ABOUT</h2>
+                    <h2 >ETERNAL</h2>
                 </div>
-                <span class="login_method">快速登入結帳</span>
-                <div class="quick_login_btn">
-                    <span class="line_icon"><img src="icon/line_icon.png" alt=""></span>
-                    <input type="button" class="quick_login" value="LINE登入">
-                </div>
-                <div class="quick_login_btn">
-                    <span class="quick_login_icon"><i class="fa-brands fa-facebook-f fa-xl" style="color: #d9d7cc;"></i></span>
-                    <input type="button" class="quick_login" value="FACEBOOK登入">
-                </div>
-                <div class="login_and_forgot">
-                    <span class="login_method">E-mail登入 or 帳號登入</span>
-                    <a href="#">
-                        <button class="forgot_password">忘記密碼</button>
-                    </a>
-                </div>
-                <div class="login_box">
-                    <input type="text" class="account_number" placeholder="Email Address/Account會員帳號">
-                    <input type="password" class="password" placeholder="Password 會員密碼">
-                    <input type="submit" class="login_btn" value="LOG IN">
-                </div>
+                <a class="list-group-item-action" href="#about_pic01">關於我們</a>
+                <a class="list-group-item-action" href="#about_pic02">形象概念店</a>
+                <a class="list-group-item-action" href="#about_pic03">工作機會</a>
+                <a class="list-group-item-action" href="#about_pic04">品牌合作</a>
+              </div>
             </div>
-        </div>
-        <div class="log_up_page">
-            <h3 class="logup_title">New here ?</h3>
-            <p class="logup_text">Sign up and explore our new outfits !</p>
-            <a href="#">
-                <button class="logup_btn">SIGN UP</button>
-            </a>
-        </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <div id="about_pic01">
+                    <img src="images/about_eternal.jpg" alt="">
+                </div>
+                <h4 class="title_text">關於我們</h4>
+                <p class="about_text">創立於2019年，是一家領先環保的時裝品牌，採用環保材料消除衣物製造而帶來的環境影響。
+                    旨在喚起人們對於生命無止境的可能性與認知。<br>
+                    
+                    ETERNAL 認為每一個人都應該勇於接受挑戰、面對未知的冒險，並開拓出獨一無二的風格。<br>
+                    並且致力於幫助人們表現自我與塑造自己的個性，不論背景或文化，都適合穿 ETERNAL 的服飾，我們也提供高品質的材質和剪裁，使人們自信地面對每一天 ，同時也可以展現自我。 
+                </p>
+                <div id="about_pic02">
+                    <img src="images/about_eternal02.jpg" alt="">
+                </div>
+                <h4 class="title_text">形象概念店</h4>
+                <p class="about_text">
+                    形象概念店將理想生活模樣構築其中，詮釋美好生活 展現毫不費力日常時髦。<br>
+                    傳達簡單自然的風格，外牆用純白色作主調，並相互襯托出柔和又平靜的氛圍。<br>
+                    搭配植栽增加自然感，使整體空間更加清新、和諧。
+                </p>
+                <div id="about_pic03">
+                    <img src="images/about_eternal03.jpg" alt="">
+                </div>
+                <h4 class="title_text">工作機會</h4>
+                <p class="about_text">
+                    如果妳也喜歡 ETERNAL 的品牌風格以及分享美好生活的概念<br>
+                    妳所負責的工作將讓更多人在 ETERNAL 享受愉快的購物時光
+                    <button class="work_btn">點擊查看104最新職缺</button>
+                </p>
+                <div id="about_pic04">
+                    <img src="images/about_eternal04.jpg" alt="">
+                </div>
+                <h4 class="title_text">品牌合作</h4>
+                <p class="about_text">
+                    品牌合作、媒體報導、商品商借、優質供應商…等需求合作，歡迎與我們聯絡。<br>
+                    請寄至service@eternal.com.tw，我們將盡速與您聯繫。
+                </p>
+              </div>
+            </div>
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </section>
     <footer class="eternal_footer">
         <nav class="button_nav">
