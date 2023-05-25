@@ -216,10 +216,10 @@
             <div class="product_desciption">
                 <div class="product_desciption_menu">
                     <div class="product_information">
-                        <button class="product_information_btn" aria-current="page">
+                        <button class="product_information_btn btn_opening" aria-current="page">
                             <h4 class="product_information_title">商品資訊</h4>
                         </button>
-                        <div class="product_information_about product_guide">
+                        <div class="product_information_about  product_guide ">
                             此款版型寬鬆<br>
 
                             附不可拆墊肩/後片下擺雙開岔造型/附內裡/袖口釦子不可打開/胸前假口袋造型/前片兩側袋蓋式真口袋<br>
@@ -234,12 +234,7 @@
                             
                             加工產地 / 台灣<br>
                         </div>
-                    </div>
-                    <div class="product_information">
-                        <button class="product_information_btn">
-                            <h4 class="product_information_title">洗滌方式</h4>
-                        </button>
-                        <div class="product_laundry_guide product_guide">
+                        <div class="product_laundry_guide product_guide product_opening">
                             1.深淺色請分開洗滌，以避免造成互相移染。<br>
 
                             2.請採低溫手洗，以保持商品型態。<br>
@@ -252,11 +247,6 @@
                             
                             6.此類商品不可熨燙。<br>
                         </div>
-                    </div>
-                    <div class="product_information">
-                        <button class="product_information_btn">
-                            <h4 class="product_information_title">尺寸指南</h4>
-                        </button>
                         <div class="product_size_guide product_guide">
                             <table style="width: 385px;" border="1px">
                                 <tbody>
@@ -300,14 +290,32 @@
                             </table>
                         </div>
                     </div>
+                    <div class="product_information">
+                        <button class="product_information_btn">
+                            <h4 class="product_information_title">洗滌方式</h4>
+                        </button>
+                    </div>
+                    <div class="product_information">
+                        <button class="product_information_btn">
+                            <h4 class="product_information_title">尺寸指南</h4>
+                        </button>
+                    </div>
                 </div>
             </div>
             <script>
                 let product_information_about = document.querySelectorAll(".product_information_btn")
-                let product_laundry_guide = document.querySelectorAll(".product_information_btn")
-                for (let i of product_information_about){
+                let product_laundry_guide = document.querySelectorAll(".product_guide")
+                let arr = [...product_information_about]
+                for (let i of arr){
                     i.addEventListener("click",function(){
-                        
+                        for(let q = 0 ;q < product_laundry_guide.length; q++){
+                            product_laundry_guide[q].classList.remove("product_opening") 
+                            product_information_about[q].classList.remove("btn_opening")                         
+                        }
+                        let w = arr.indexOf(this)
+                        product_laundry_guide[w].classList.add("product_opening")
+                        product_information_about[w].classList.add("btn_opening")
+
                     })
                 }
             </script>
