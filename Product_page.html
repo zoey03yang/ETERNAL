@@ -219,7 +219,7 @@
                         <button class="product_information_btn" aria-current="page">
                             <h4 class="product_information_title">商品資訊</h4>
                         </button>
-                        <div class="product_information_about">
+                        <div class="product_information_about product_guide">
                             此款版型寬鬆<br>
 
                             附不可拆墊肩/後片下擺雙開岔造型/附內裡/袖口釦子不可打開/胸前假口袋造型/前片兩側袋蓋式真口袋<br>
@@ -239,7 +239,7 @@
                         <button class="product_information_btn">
                             <h4 class="product_information_title">洗滌方式</h4>
                         </button>
-                        <div class="product_laundry_guide">
+                        <div class="product_laundry_guide product_guide">
                             1.深淺色請分開洗滌，以避免造成互相移染。<br>
 
                             2.請採低溫手洗，以保持商品型態。<br>
@@ -257,7 +257,7 @@
                         <button class="product_information_btn">
                             <h4 class="product_information_title">尺寸指南</h4>
                         </button>
-                        <div class="product_size_guide">
+                        <div class="product_size_guide product_guide">
                             <table style="width: 385px;" border="1px">
                                 <tbody>
                                 <tr>
@@ -302,6 +302,15 @@
                     </div>
                 </div>
             </div>
+            <script>
+                let product_information_about = document.querySelectorAll(".product_information_btn")
+                let product_laundry_guide = document.querySelectorAll(".product_information_btn")
+                for (let i of product_information_about){
+                    i.addEventListener("click",function(){
+                        
+                    })
+                }
+            </script>
             <div class="background">
                 <img src="images/background_image_flower_3.png" alt="">
             </div>

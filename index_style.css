@@ -18,7 +18,7 @@
   z-index: 2;
 }
 .eternal_logo {
-  width: 160px;
+  width: 12.5%;
 }
 .eternal_logo img {
   width: 100%;
@@ -26,13 +26,13 @@
   margin: 5px 0px 0px 0px;
 }
 .top_nav {
+  width: 31.25%;
   display: flex;
-  align-items: flex-end;
 }
 .main_menu {
-  width: 400px;
-  margin-top: 15px;
+  width: 100%;
   display: flex;
+  align-items: flex-end;
   justify-content: space-around;
 }
 .shop_all a,
@@ -46,25 +46,27 @@
   color: #504A59;
   text-decoration: underline;
 }
-.shop_all {
+.shop_all,
+.new_arrival,
+.restock {
 position: relative;
-padding-bottom: 15px;
+padding-bottom: 4%;
 display: block;
 }
 .shop_all:hover .Classification{
 display: block;
 }
 .Classification{
-width: 90px;
+width: 100%;
 display: none;
 position: absolute;
-top: 41px;
+top: 100%;
 background-color: #ffffff;
 }
 .Classification_button{
-padding-top: 5px;
-padding-bottom: 5px;
-padding-left: 10px;
+padding-top: 5%;
+padding-bottom: 5%;
+padding-left: 10%;
 margin: 0;
 background-color: #D9D7CC;
 }
@@ -85,35 +87,35 @@ text-decoration: none;
 .text_restock {
   color: #504A59;
   font-size: 16px;
-  padding: 0px 10px 0px 10px;
+  padding: 0 15px 0 15px;
 }
 .header_box {
   display: flex;
   align-items: center;
+  width: 20%;
 }
 .eternal_search {
-  width: 150px;
+  width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 .eternal_search input#search {
-  width: 150px;
+  width: 100%;
   height: 35px;
   background: #D9D7CC;
   border: none;
-  font-size: 10pt;
+  font-size: 10px;
   float: left;
   color: #504A59;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  padding-left: 25%;
+  padding-right: 8%;
   border-radius: 20px;
 }
 .eternal_search .search_icon {
   position: absolute;
-  margin-left: 10px;
-  margin-top: 8px;
+  margin-left: 10%;
+  margin-top: 4%;
   z-index: 1;
   color: #504A59;
 }
@@ -125,8 +127,8 @@ text-decoration: none;
 }
 .member,
 .shopping_bag {
-  width: 15px;
-  margin-left: 20px;
+  width: 8%;
+  margin-left: 6%;
 }
 .member img,
 .shopping_bag img {
@@ -143,10 +145,10 @@ text-decoration: none;
     background-color: #ffffff;
   }
   .button_nav{
-    width: 1000px;
+    width: 78.125%;
   }
   .information_menu{
-    margin: 10px 0px 10px 0px;
+    margin: 1.5% 0 1% 0;
     display: flex;
     justify-content: space-around;
   }
@@ -161,14 +163,11 @@ text-decoration: none;
       color: #222226;
       text-decoration: underline;
   }
-  .text_instagram{
-    margin-right: 20px;
-  }
   .button_tag{
-    width: 1000px;
+    width: 78.125%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: .6%;
   }
   .copyright{
     font-size: 5px;
@@ -244,7 +243,7 @@ text-decoration: none;
 }
 .news_line{
   width: 330px;
-  /* min-height: 330px; */
+  min-height: 330px;
   margin-right: 100px;
   border-right: 1px solid #BF9B8E;
   position: relative;
