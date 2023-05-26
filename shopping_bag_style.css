@@ -26,7 +26,7 @@ body{
 .eternal_logo img {
   width: 100%;
   display: flex;
-  margin: 5px 0px 0px 0px;
+  padding: 3% 0 0 0;
 }
 .top_nav {
   width: 31.25%;
@@ -38,23 +38,46 @@ body{
   align-items: flex-end;
   justify-content: space-around;
 }
-.shop_all a,
-.new_arrival a,
-.restock a{
-  text-decoration: none;
-}
-.shop_all a:hover,
-.new_arrival a:hover,
-.restock a:hover{
-  color: #504A59;
-  text-decoration: underline;
-}
 .shop_all,
 .new_arrival,
 .restock {
 position: relative;
 padding-bottom: 4%;
 display: block;
+}
+.text_shop a,
+.text_new a,
+.text_restock a{
+  font-size: 1.25vw;
+  color: #504A59;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;  
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+.shop_all a:before,
+.new_arrival a:before,
+.restock a:before{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+.shop_all:hover a,
+.shop_all:focus a,
+.new_arrival:hover a,
+.new_arrival:focus a,
+.restock:hover a,
+.restock:focus a{
+  transform: rotateX(90deg) translateY(-22px);
 }
 .shop_all:hover .Classification{
 display: block;
@@ -67,10 +90,9 @@ top: 100%;
 background-color: #ffffff;
 }
 .Classification_button{
-padding-top: 5%;
 padding-bottom: 5%;
-padding-left: 10%;
-margin: 0;
+padding-left: 20%;
+margin: auto;
 background-color: #D9D7CC;
 }
 .Classification_button:hover{
@@ -78,18 +100,19 @@ background-color: #BF9B8E;
 }
 
 .Classification_button a{
-display: block;
+font-weight: 400;
 color: #504A59;
+text-decoration: none;
 }
 .Classification_button a:hover{
 text-decoration: none;
 }
-
 .text_shop,
 .text_new,
 .text_restock {
   color: #504A59;
-  font-size: 16px;
+  font-size: 1.25vw;
+  font-weight: 400;
   padding: 0 15px 0 15px;
 }
 .header_box {
@@ -105,11 +128,11 @@ text-decoration: none;
 }
 .eternal_search input#search {
   width: 100%;
-  height: 35px;
+  height: 40px;
+  display: inline-block;
   background: #D9D7CC;
   border: none;
-  font-size: 10px;
-  float: left;
+  font-size: 0.78125vw;
   color: #504A59;
   padding-left: 25%;
   padding-right: 8%;
@@ -118,8 +141,9 @@ text-decoration: none;
 .eternal_search .search_icon {
   position: absolute;
   margin-left: 10%;
-  margin-top: 4%;
+  margin-top: 3%;
   z-index: 1;
+  font-size: 1.25vw;
   color: #504A59;
 }
 .eternal_search input#search:hover,
@@ -173,7 +197,7 @@ text-decoration: none;
     margin-bottom: .6%;
   }
   .copyright{
-    font-size: 5px;
+    font-size: 0.390625vw;
   }
   /******************************************shopping_bag_page */
   .shopping_bag_page{

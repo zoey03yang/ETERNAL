@@ -35,23 +35,46 @@
   align-items: flex-end;
   justify-content: space-around;
 }
-.shop_all a,
-.new_arrival a,
-.restock a{
-  text-decoration: none;
-}
-.shop_all a:hover,
-.new_arrival a:hover,
-.restock a:hover{
-  color: #504A59;
-  text-decoration: underline;
-}
 .shop_all,
 .new_arrival,
 .restock {
 position: relative;
 padding-bottom: 4%;
 display: block;
+}
+.text_shop a,
+.text_new a,
+.text_restock a{
+  font-size: 1.25vw;
+  color: #504A59;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;  
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+.shop_all a:before,
+.new_arrival a:before,
+.restock a:before{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+.shop_all:hover a,
+.shop_all:focus a,
+.new_arrival:hover a,
+.new_arrival:focus a,
+.restock:hover a,
+.restock:focus a{
+  transform: rotateX(90deg) translateY(-22px);
 }
 .shop_all:hover .Classification{
 display: block;
@@ -64,10 +87,9 @@ top: 100%;
 background-color: #ffffff;
 }
 .Classification_button{
-padding-top: 5%;
 padding-bottom: 5%;
-padding-left: 10%;
-margin: 0;
+padding-left: 20%;
+margin: auto;
 background-color: #D9D7CC;
 }
 .Classification_button:hover{
@@ -75,14 +97,13 @@ background-color: #BF9B8E;
 }
 
 .Classification_button a{
-display: block;
 font-weight: 400;
 color: #504A59;
+text-decoration: none;
 }
 .Classification_button a:hover{
 text-decoration: none;
 }
-
 .text_shop,
 .text_new,
 .text_restock {
@@ -104,11 +125,11 @@ text-decoration: none;
 }
 .eternal_search input#search {
   width: 100%;
-  height: 35px;
+  height: 40px;
+  display: inline-block;
   background: #D9D7CC;
   border: none;
-  font-size: 0.78125%;
-  float: left;
+  font-size: 0.78125vw;
   color: #504A59;
   padding-left: 25%;
   padding-right: 8%;
@@ -117,8 +138,9 @@ text-decoration: none;
 .eternal_search .search_icon {
   position: absolute;
   margin-left: 10%;
-  margin-top: 4%;
+  margin-top: 3%;
   z-index: 1;
+  font-size: 1.25vw;
   color: #504A59;
 }
 .eternal_search input#search:hover,
@@ -172,14 +194,14 @@ text-decoration: none;
     margin-bottom: .6%;
   }
   .copyright{
-    font-size: 5px;
+    font-size: 0.390625vw;
   }
   /**************************************************** carousel_banner */
   .carousel-inner img {
     position: relative;
   }
   .banner_text_new {
-    font-size: 80px;
+    font-size: 6.25vw;
     font-weight: lighter;
     color: #504A59;
     position: absolute;
@@ -187,7 +209,7 @@ text-decoration: none;
     bottom: 220px;
   }
   .banner_text_arrival{
-    font-size: 80px;
+    font-size: 6.25vw;
     font-weight: lighter;
     color: #504A59;
     position: absolute;
@@ -195,28 +217,28 @@ text-decoration: none;
     bottom: 140px;
   }
   .banner_text0510{
-    font-size: 30px;
+    font-size: 2.34375vw;
     font-weight: lighter;
     position: absolute;
     right: 30px;
     bottom: 230px;
   }
   .banner_text_brand{
-    font-size: 80px;
+    font-size: 6.25vw;
     font-weight: lighter;
     position: absolute;
     left: 50px;
     bottom: 230px;
   }
   .text_classic{
-    font-size: 80px;
+    font-size: 6.25vw;
     font-weight: lighter;
     position: absolute;
     left: 130px;
     bottom: 150px;
   }
   .text_classic_never{
-    font-size: 20px;
+    font-size: 1.5625vw;
     font-weight: 300;
   }
   .banner_comfortable{
@@ -228,7 +250,7 @@ text-decoration: none;
   }
   .text_comfortable{
     color: #504A59;
-    font-size: 50px;
+    font-size: 3.90625vw;
     font-weight: lighter;
     line-height: 1.2em;
   }
@@ -242,16 +264,16 @@ text-decoration: none;
 }
 .news_box{
   display: flex;
+  width: 100%;
 }
 .news_line{
-  width: 330px;
-  min-height: 330px;
-  margin-right: 100px;
+  width: 25.78125%;
+  margin-right: 7.8125%;
   border-right: 1px solid #BF9B8E;
   position: relative;
 }
 .news_banner_text{
-  font-size: 60px;
+  font-size: 4.6875vw;
   font-weight: lighter;
   line-height: 0.8em;
   writing-mode: vertical-rl;
@@ -265,9 +287,14 @@ text-decoration: none;
   margin: 5px 30px 5px 0px;
   border-radius: 50px 50px 50px 50px;
   overflow: hidden;
+  transform:scale(1,1);
+  transition: all .2s ease-out;
 }
 .news_pic img{
   width: 100%;
+}
+.news_pic:hover {
+  transform:scale(1.2,1.2);
 }
 .news_all{
   margin-top: 50px;
