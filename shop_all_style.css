@@ -202,13 +202,14 @@ text-decoration: none;
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:500px){
   .main_menu,
   .header_box {
     display: none;
   }
   .eternal_header {
     width: 100%;
+    height: 60px;
     background-color: #ffffff;
     border-bottom: 1px solid #D9D7CC;
     position: relative;
@@ -216,6 +217,8 @@ text-decoration: none;
   .eternal_logo {
     width: 30%;
     margin-top: 1%;
+    display: flex;
+    align-items: center;
   }
   .eternal_search {
     width: 100%;
@@ -231,7 +234,7 @@ text-decoration: none;
     border: 1px solid #504A59;
     font-size: 16px;
     color: #504A59;
-    padding-left: 15%;
+    padding-left: 12%;
     padding-right: 8%;
     border-radius: 20px;
     margin-left: 5%;
@@ -240,40 +243,58 @@ text-decoration: none;
   .eternal_search .search_icon {
     position: absolute;
     margin-left: 12%;
-    margin-top: 3.6%;
+    margin-top: 2.8%;
     z-index: 1;
     font-size: 2.5svw;
     color: #504A59;
   }  
   .menu_btn {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     background-color: #D9D7CC;
     display: block;
     border-radius: 5px;
     position: absolute;
-    top: 8px;
-    right: 20px;
+    top: 12px;
+    right: 25px;
   }
   .menu_btn span {
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-    display: block;
-    overflow: hidden;
-  }
-  .menu_btn::before{
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 25px;
+    width: 70%;
+    height: 1.5px;
     background-color: #504A59;
-    top:0;
-    bottom: 0;
-    left: 5px;
+    overflow: hidden;
+    position: absolute;
     margin: auto;
-    box-shadow: 0px 7px 0px #504A59,
-                0px -7px 0px #504A59;
+    left: 0;
+    right: 0;
+    rotate: 0deg;
+  }
+  #menu_control:checked ~ .eternal_header #rwd_menu {
+    left: 0%;
+  }
+  .menu_btn span:nth-child(1){
+      top: 9px;
+      transition: top .5s .5s, rotate .5s;
+  }
+  .menu_btn span:nth-child(2){
+      top: 18px;
+  }
+  .menu_btn span:nth-child(3){
+      top: 28px;
+      transition: top .5s .5s, rotate .5s;
+  }
+  #menu_control:checked + .eternal_header .menu_btn span:nth-child(1){
+      top: 18px;
+      rotate: 45deg;
+      transition: top .5s, rotate .5s .5s;
+  }
+  #menu_control:checked + .eternal_header .menu_btn span:nth-child(2){
+      display: none;
+  }
+  #menu_control:checked + .eternal_header .menu_btn span:nth-child(3){
+      top: 18px;
+      rotate: -45deg;
+      transition: top .5s, rotate .5s .5s;
   }
   #menu_control {
     z-index: -2;
@@ -282,11 +303,11 @@ text-decoration: none;
   #rwd_menu{
     display: block;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     background-color: #D9D7CC;
     padding-top: 20px;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: -100%;
     transition: .5s;
   }
@@ -294,11 +315,14 @@ text-decoration: none;
     display: block;
     text-decoration: none;
     color: #504A59;
-    padding: 10px 20px;
+    padding: 10px 35px;
     border-bottom: 1px solid #504A59;
   }
-  #menu_control:checked ~ .eternal_header #rwd_menu {
-    left: 0%;
+  .carousel-indicators .active{
+    opacity: 0;
+  }
+  .carousel-indicators [data-bs-target]{
+    opacity: 0;
   }
 }
   /********************************************** footer */
