@@ -14,12 +14,27 @@
     <link rel="stylesheet" href="login_style.css">
 </head>
 <body>
+    <input type="checkbox" name="" id="menu_control">
     <header class="eternal_header">
         <h1 class="eternal_logo">
             <a href="index.html">
                 <img src="logo.png" alt="eternal_logo">
             </a>
         </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav id="rwd_menu">
+            <div class="eternal_search">
+                <span class="search_icon"><i class="fa-solid fa-magnifying-glass" style="color: #16161a;"></i></span>
+                <input type="search" id="search" placeholder="Search搜尋">
+            </div>
+            <a href="shop_all.html">所有商品</a>
+            <a href="shop_all.html">最新商品</a>
+            <a href="shop_all.html">熱銷商品</a>
+            <a href="login.html">會員登入</a>
+            <a href="shopping_bag.html">購物車</a>
+        </nav>
         <nav class="top_nav">
             <div class="main_menu">
                 <div class="shop_all">
