@@ -339,7 +339,8 @@ text-decoration: none;
     background-color: #ffffff;
   }
   .button_nav{
-    width: 78.125%;
+    width: 80%;
+    flex-shrink: 0;
   }
   .information_menu{
     margin: 1.5% 0 1% 0;
@@ -358,13 +359,35 @@ text-decoration: none;
       text-decoration: underline;
   }
   .button_tag{
-    width: 78.125%;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin-bottom: .6%;
   }
   .copyright{
     font-size: 0.390625vw;
+  }
+  @media screen and (max-width:768px){
+    ul>li {
+      font-size: 12px;
+    }
+    .copyright{
+      font-size: 9px;
+      margin-bottom: 1%;
+    }
+  }
+  @media screen and (max-width:500px){
+    .information_menu {
+      display: block;
+      text-align: center;
+    }
+    ul>li {
+      margin-top: 2%;
+    }
+    .copyright{
+      margin-top: 2%;
+      margin-left: 6%;
+    }
   }
   /* **********************************how_to_buy */
   .about_buy{
