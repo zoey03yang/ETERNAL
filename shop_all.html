@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="shop_all_style.css">
 </head>
 <body>
@@ -163,6 +164,73 @@
                     <a href="#">三件7折</a>
                 </div>
             </div>
+        </nav>
+        <nav class="shop_all_nav_rwd">
+            <div class="large_category_rwd_tab" id="category_rwd_tab">
+                <a href="#">
+                    <h3 class="nav_category_rwd">上身類</h3>
+                </a>
+                <a href="#">
+                    <h3 class="nav_category_rwd">下身類</h3>
+                </a>
+                <a href="#">
+                    <h3 class="nav_category_rwd">連身類</h3>
+                </a>
+                <a href="#">
+                    <h3 class="nav_category_rwd">配飾</h3>
+                </a>
+                <a href="#">
+                    <h3 class="nav_category_rwd">風格支線</h3>
+                </a>
+                <a href="#">
+                    <h3 class="nav_category_rwd">優惠活動</h3>
+                </a>
+            </div>
+            <div id="category_details_rwd">
+                <div class="category_details">
+                    <a href="#">無袖</a>
+                    <a href="#">短袖</a>
+                    <a href="#">長袖</a>
+                    <a href="#">襯衫</a>
+                    <a href="#">外套</a>
+                </div>
+                <div class="category_details">
+                    <a href="#">短裙</a>
+                    <a href="#">長裙</a>
+                    <a href="#">短褲</a>
+                    <a href="#">長褲</a>
+                    <a href="#">牛仔褲</a>
+                </div>
+                <div class="category_details">
+                    <a href="#">洋裝</a>
+                    <a href="#">連身褲</a>
+                    <a href="#">泳裝</a>
+                </div>
+                <div class="category_details">
+                    <a href="#">耳環</a>
+                    <a href="#">首飾</a>
+                    <a href="#">戒指</a>
+                    <a href="#">髮飾</a>
+                    <a href="#">帽子</a>
+                </div>
+                <div class="category_details">
+                    <a href="#">法國旅拍系列</a>
+                    <a href="#">居家休閒系列</a>
+                    <a href="#">電影聯名系列</a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('#category_rwd_tab .nav_category_rwd').click(function(){
+                        var index = $(this).index();
+                        $('#category_details_rwd .category_details.active').removeClass('active').fadeOut(function(){
+                            $('#category_details_rwd .category_details').eq(index).fadeIn().addClass('active');
+                        });
+                    });
+                    
+                   $('#category_details_rwd .category_details').hide().first().show().addClass('active');
+                })
+            </script>      
         </nav>
         <section class="shop_all_product">
             <nav  class="shop_all_breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -406,6 +474,254 @@
                 <div class="page"><a href="#">4</a></div>
                 <div class="page"><a href="#">5</a></div>
             </nav>
+        </section>
+        <section class="shop_all_product_rwd">
+            <nav  class="shop_all_breadcrumb_rwd" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">SHOP ALL</li>
+                </ol>
+            </nav>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_01_01.jpg" 
+                        onmouseover="this.src='images/product_row_01_01_01.jpg';
+                        "onmouseout="this.src='images/product_row_01_01.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">品牌經典西裝外套</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 1,800</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_01_02.jpg" 
+                        onmouseover="this.src='images/product_row_01_02_02.jpg';
+                        "onmouseout="this.src='images/product_row_01_02.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">復古印花西裝外套</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,800</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_01_03.jpg" 
+                        onmouseover="this.src='images/product_row_01_03_03.jpg';
+                        "onmouseout="this.src='images/product_row_01_03.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">挺版俐落西裝外套</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 5,400</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_01_04.jpg" 
+                        onmouseover="this.src='images/product_row_01_04_04.jpg';
+                        "onmouseout="this.src='images/product_row_01_04.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">質感設計西裝外套</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 3,600</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_01_05.jpg" 
+                        onmouseover="this.src='images/product_row_01_05_05.jpg';
+                        "onmouseout="this.src='images/product_row_01_05.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">經典黑色長版風衣</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 4,500</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_02_01.jpg" 
+                        onmouseover="this.src='images/product_row_02_01_01.jpg';
+                        "onmouseout="this.src='images/product_row_02_01.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">典雅晚宴質感長洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 4,200</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_02_02.jpg" 
+                        onmouseover="this.src='images/product_row_02_02_02.jpg';
+                        "onmouseout="this.src='images/product_row_02_02.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">直條紋腰身綁帶洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,800</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_02_03.jpg" 
+                        onmouseover="this.src='images/product_row_02_03_03.jpg';
+                        "onmouseout="this.src='images/product_row_02_03.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">天然染色連身牛仔褲</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,600</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_02_04.jpg" 
+                        onmouseover="this.src='images/product_row_02_04_04.jpg';
+                        "onmouseout="this.src='images/product_row_02_04.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">微皺百搭款休閒襯衫</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 1,600</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_02_05.jpg" 
+                        onmouseover="this.src='images/product_row_02_05_05.jpg';
+                        "onmouseout="this.src='images/product_row_02_05.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">碎花收腰開岔長洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,800 </figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_03_01.jpg" 
+                        onmouseover="this.src='images/product_row_03_01_01.jpg';
+                        "onmouseout="this.src='images/product_row_03_01.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">經典抓皺絲滑長洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 3,800</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_03_02.jpg" 
+                        onmouseover="this.src='images/product_row_03_02_02.jpg';
+                        "onmouseout="this.src='images/product_row_03_02.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">Future銀剪裁款洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,800</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_03_03.jpg" 
+                        onmouseover="this.src='images/product_row_03_03_03.jpg';
+                        "onmouseout="this.src='images/product_row_03_03.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">貼膚薄紗夢境洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 4,200</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_03_04.jpg" 
+                        onmouseover="this.src='images/product_row_03_04_04.jpg';
+                        "onmouseout="this.src='images/product_row_03_04.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">修肩典雅短洋裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,600 </figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_03_05.jpg" 
+                        onmouseover="this.src='images/product_row_03_05_05.jpg';
+                        "onmouseout="this.src='images/product_row_03_05.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">菱格設計針織外套</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 3,200 </figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_04_01.jpg" 
+                        onmouseover="this.src='images/product_row_04_01_01.jpg';
+                        "onmouseout="this.src='images/product_row_04_01.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">度假風雲朵連身裙</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 1,800</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_04_02.jpg" 
+                        onmouseover="this.src='images/product_row_04_02_02.jpg';
+                        "onmouseout="this.src='images/product_row_04_02.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">寬鬆潑墨設計運動套裝</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 3,200</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_04_03.jpg" 
+                        onmouseover="this.src='images/product_row_04_03_03.jpg';
+                        "onmouseout="this.src='images/product_row_04_03.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">經典口袋裁縫設計T恤</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 1,200</figcaption>
+                </figure>
+            </div>
+            <div class="product_row_rwd">
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_04_04.jpg" 
+                        onmouseover="this.src='images/product_row_04_04_04.jpg';
+                        "onmouseout="this.src='images/product_row_04_04.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">單寧顯瘦直筒牛仔褲</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 1,800</figcaption>
+                </figure>
+                <figure class="product_pic_rwd">
+                    <a href="Product_page.html">
+                        <img src="images/product_row_04_05.jpg" 
+                        onmouseover="this.src='images/product_row_04_05_05.jpg';
+                        "onmouseout="this.src='images/product_row_04_05.jpg';">
+                    </a>
+                    <a href="Product_page.html">
+                        <figcaption class="product_name">質感休閒西裝褲</figcaption>
+                    </a>
+                    <figcaption class="product_price">NT. 2,600 </figcaption>
+                </figure>
+            </div>
         </section>
     </section>
     <footer class="eternal_footer">
