@@ -454,7 +454,7 @@ text-decoration: none;
   }
   .product_name,
   .product_price{
-    font-size: 1.25vw;
+    font-size: 16px;
   }
   .product_color{
     margin-top: 5%;
@@ -482,6 +482,9 @@ text-decoration: none;
   }
   .product_size{
     margin-top: 5%;
+  }
+  .product_size a {
+    color: #504A59;
   }
   .size_btn{
     width: 25px;
@@ -515,6 +518,7 @@ text-decoration: none;
     width: 15%;
     border: none;
     background-color: #D9D7CC;
+    color: #504A59;
     font-size: 20px;
   }
   .shopping_button{
@@ -529,7 +533,7 @@ text-decoration: none;
     width: 45%;
     background-color: #D9D7CC;
     border: #504A59 1px solid;
-    font-size: 1.09375vw;
+    font-size: 14px;
   }
   .buy_now:hover,
   .add_to_bag:hover {
@@ -627,13 +631,13 @@ text-decoration: none;
     position: relative;
   }
   .product_information_title{
-    font-size: 1.09375vw;
+    font-size: 14px;
   }
   .product_information_about,
   .product_laundry_guide,
   .product_size_guide{
-  width: 33.7em;
-  font-size: 0.9375vw;
+  width: 38em;
+  font-size: 12px;
   padding: 25% 0 0 0;
   display: none;
   position: absolute;
@@ -671,26 +675,31 @@ text-decoration: none;
   @media screen and (max-width:1200px){
   th, td, tr {
     padding: 1.2%;
-    height: 3vh;
+    height: 2vh;
   }
   .background {
     top: 32vh;
   }
+  .product_information_about,
+  .product_laundry_guide,
+  .product_size_guide{
+  width: 32em;
   }
+}
   @media screen and (max-width:1024px){
     th, td, tr {
-      height: 2.5vh;
+      height: 2.4vh;
     }
     .product_information_about, 
     .product_laundry_guide, 
     .product_size_guide {
-      width: 41.7em;
-      line-height: 1.8em;
+      width: 34em;
+      line-height: 1.5em;
     }
   }
   @media screen and (max-width:768px){
     .background {
-      top: 35vh;
+      top: 38vh;
     }
     th {
       width: 20%;
@@ -701,8 +710,7 @@ text-decoration: none;
     .product_information_about, 
     .product_laundry_guide, 
     .product_size_guide {
-      width: 41.7em;
-      line-height: 2em;
+      width: 25em;
     }
   }
     @media screen and (max-width:500px){
@@ -712,15 +720,18 @@ text-decoration: none;
       .product_information_about, 
       .product_laundry_guide, 
       .product_size_guide {
-        width: 90em;
-        line-height: 4em;
+        width: 23rem;
+        line-height: 1.4em;
+      }
+      th, td, tr {
+        height: 3.2vh;
       }
       .background {
         top: 42vh;
       }
       .product_name,
       .product_price {
-        font-size: 1.5vw;
+        font-size: 16px;
       }
     }
   /******************************************related_products  */
