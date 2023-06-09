@@ -634,6 +634,7 @@ text-decoration: none;
   }
   .product_information_title{
     font-size: 14px;
+    color: #504A59;
   }
   .product_information_about,
   .product_laundry_guide,
@@ -660,7 +661,7 @@ text-decoration: none;
   th,
   td,
   tr{
-    font-size: 0.9375vw;
+    font-size: 12px;
     text-align: center;
     border: #504A59 1px solid;
     padding: 1%;

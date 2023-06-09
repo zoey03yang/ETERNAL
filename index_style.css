@@ -666,7 +666,7 @@ text-decoration: none;
   .news_banner_more_text{
     font-size: 10px;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
   .news_pic {
     width: 16%;
@@ -863,7 +863,7 @@ text-decoration: none;
     width: 80%;
   }
   .top_left_pic_name {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 200;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
@@ -883,7 +883,7 @@ text-decoration: none;
   position: relative;
 }
 .top_right_pic_name {
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 200;
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
@@ -982,8 +982,8 @@ text-decoration: none;
 }
 @media screen and (max-width:500px){
   .accessories_name {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     padding: 0;
     bottom: 8px;
   }
