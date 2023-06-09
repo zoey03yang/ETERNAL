@@ -653,6 +653,7 @@ text-decoration: none;
   .btn_opening {
     opacity: 1;
     text-decoration: underline;
+    color: #504A59;
   }
   table {
     width: 100%;
@@ -731,7 +732,8 @@ text-decoration: none;
         height: 3.2vh;
       }
       .background {
-        top: 42vh;
+        top: 80%;
+        width: 30%;
       }
       .product_name,
       .product_price {
