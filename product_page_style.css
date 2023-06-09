@@ -216,6 +216,8 @@ text-decoration: none;
     background-color: #ffffff;
     border-bottom: 1px solid #D9D7CC;
     position: relative;
+    position: sticky;
+    top: 0;
   }
   .eternal_logo {
     width: 30%;
@@ -428,10 +430,10 @@ text-decoration: none;
   /* ************************************************* product_about*/
   .product_about {
     width: 50%;
-    height: 650px;
+    height: 600px;
     padding: 5% 15% 0 3%;
     position: sticky;
-    top: 20px;
+    top: 8%;
   }
   .product_name_price{
     display: flex;
@@ -439,7 +441,7 @@ text-decoration: none;
   }
   .product_name,
   .product_price{
-    font-size: 16px;
+    font-size: 1.25vw;
   }
   .product_color{
     margin-top: 5%;
@@ -487,8 +489,8 @@ text-decoration: none;
     border: #504A59 1px solid;
   }
   .quantity{
-    width: 250px;
-    height: 35px;
+    width: 70%;
+    height: 45px;
     border: none;
     background-color: #D9D7CC;
     text-align: center;
@@ -496,8 +498,8 @@ text-decoration: none;
   }
   .decrease,
   .increase{
-    height: 35px;
-    width: 40px;
+    height: 45px;
+    width: 15%;
     border: none;
     background-color: #D9D7CC;
     font-size: 20px;
@@ -510,11 +512,11 @@ text-decoration: none;
   }
   .buy_now,
   .add_to_bag {
-    height: 35px;
-    width: 135px;
+    height: 45px;
+    width: 45%;
     background-color: #D9D7CC;
     border: #504A59 1px solid;
-    font-size: 14px;
+    font-size: 1.09375vw;
   }
   .buy_now:hover,
   .add_to_bag:hover {
@@ -541,14 +543,14 @@ text-decoration: none;
     position: relative;
   }
   .product_information_title{
-    font-size: 14px;
+    font-size: 1.09375vw;
   }
   .product_information_about,
   .product_laundry_guide,
   .product_size_guide{
-  width: 385px;
-  font-size: 12px;
-  padding: 20px 0 100px 0;
+  width: 33.7em;
+  font-size: 0.9375vw;
+  padding: 25% 0 0 0;
   display: none;
   position: absolute;
   line-height: 1.6em;
@@ -563,16 +565,16 @@ text-decoration: none;
   th,
   td,
   tr{
-    font-size: 12px;
+    font-size: 0.9375vw;
     text-align: center;
     border: #504A59 1px solid;
-    padding: 5px;
+    padding: 1%;
   }
   .background{
     width: 35%;
     position: absolute;
     right: 0%;
-    top: 330px;
+    top: 45vh;
     z-index: -1;
   }
   .background img{
@@ -580,13 +582,13 @@ text-decoration: none;
   }
   /******************************************related_products  */
   .related_products{
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 6%;
+    margin-bottom: 8%;
   }
   .related_products_title{
-    font-size: 18px;
+    font-size: 1.40625vw;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 1.5%;
   }
   main{
     position: relative;
@@ -680,7 +682,7 @@ text-decoration: none;
   }
 .buttons {
   margin-top: 2%;
-  width: 230px;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -689,8 +691,8 @@ text-decoration: none;
   }
   #prev,
   #next{
-    width: 100px;
-    height: 30px;
+    width: 40%;
+    height: 45px;
     border: 1px solid #504A59;
     background-color: #D9D7CC;
   }

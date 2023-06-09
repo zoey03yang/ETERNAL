@@ -216,6 +216,8 @@ text-decoration: none;
     background-color: #ffffff;
     border-bottom: 1px solid #D9D7CC;
     position: relative;
+    position: sticky;
+    top: 0;
   }
   .eternal_logo {
     width: 30%;
