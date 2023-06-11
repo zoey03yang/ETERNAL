@@ -21,7 +21,7 @@ body{
   border-bottom: 1px solid #D9D7CC;
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 .eternal_logo {
   width: 12.5%;
@@ -393,18 +393,20 @@ text-decoration: none;
   }
   /* ***************************************login */
   .login{
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     background-color: #504A59;
   }
   .login_page {
     width: 70%;
-    height: 600px;
+    display: flex;
+    align-items: center;
   }
   .login_menu{
     width: 40%;
-    height: 400px;
     margin: auto;
-    margin-top: 100px;
     background-color: #D9D7CC;
     border-radius: 15% 1%;
     padding: 4% 5% 5% 5%;
@@ -450,40 +452,43 @@ text-decoration: none;
     margin-left: 6%;
   }
   .line_icon img{
-    width: 20px;
+    width: 65%;
   }
   .login_and_forgot{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
+  .login_and_forgot a {
+    text-decoration: none;
+  }
   .login_method{
     display: block;
   }
   .forgot_password{
+    display: block;
     background-color: #D9D7CC;
     color: #504A59;
     border: 1px solid #504A59;
-    padding: 1px 5px;
+    padding: 1px 3px;
   }
   .login_box{
     display: flex;
     flex-direction: column;
   }
   .login_box ::placeholder{
-    font-size: 5px;
+    font-size: 9px;
   }
   .account_number,
   .password{
-    margin-top: 8px;
-    height: 25px;
+    margin-top: 5%;
     background-color: #D9D7CC;
     border: none;
     outline: none;
     border-bottom: #504A59 1px solid;
   }
   .login_btn{
-    margin-top: 20px;
+    margin-top: 8%;
     height: 35px;
     background: #504A59;
     border: none;
@@ -502,21 +507,23 @@ text-decoration: none;
   .log_up_page{
     width: 30%;
     padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-image: url("images/log_up_background.jpg");
     background-size: 100% 100%;
     background-repeat:repeat-y;
   }
   .logup_title{
-    margin-top: 100px;
     color: #504A59;
   }
   .logup_text{
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 15%;
   }
 .logup_btn{
-    width: 265px;
+    width: 80%;
     height: 35px;
     background: #504A59;
     border: none;
@@ -525,10 +532,54 @@ text-decoration: none;
     text-align: center;
     color: #D9D7CC;
     border-radius: 3px;
-    margin-top: 140px;
+    margin-top: 45%;
 }
 .logup_btn:hover{
     background-color: #D9D7CC;
     color: #504A59;
     border: 1px solid #504A59;
+}
+@media screen and (max-width:1200px){
+  .login_menu {
+    width: 50%;
+    height: auto;
+    padding: 7%;
+  }
+}
+@media screen and (max-width:1024px){
+  .login_page {
+    width: 100%;
+    height: 70vh;
+    background-repeat:repeat-x;
+  }
+  .login_menu {
+    width: 45%;
+    height: auto;
+    padding: 5%;
+  }
+  .log_up_page {
+    width: 100%;
+    height: 30vh;
+  }
+  .logup_text {
+    margin-top: 5%;
+  }
+  .logup_btn{
+    width: 32%;
+    margin-top: 5%;
+}
+}
+@media screen and (max-width:768px){
+  .login_menu {
+    width: 65%;
+    height: auto;
+    padding: 6%;
+  }
+}
+@media screen and (max-width:500px){
+  .login_menu {
+    width: 85%;
+    height: auto;
+    padding: 6%;
+  }
 }
