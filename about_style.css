@@ -395,7 +395,7 @@ text-decoration: none;
   .about_eternal_all{
     width: 70%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 5%;
   }
   .title h2{
     font-size: 16px;
@@ -421,13 +421,11 @@ text-decoration: none;
     color: #D9D7CC;
     text-decoration: underline;
   }
-  #about_pic01{
-    width: 700px;
-  }
+  #about_pic01
   #about_pic02,
   #about_pic03,
   #about_pic04{
-    width: 700px;
+    width: 100%;
   }
   #about_pic01 img,
   #about_pic02 img,
@@ -465,4 +463,42 @@ text-decoration: none;
   .work_btn:hover{
     background-color: #D9D7CC;
     color: #504A59;
+  }
+  @media screen and (max-width:1024px){
+    .about_eternal_all {
+      width: 85%;
+    }
+  }
+  @media screen and (max-width:768px){
+    .about_eternal_all {
+      width: 90%;
+      margin-top: 3%;
+      margin-left:3%;
+    }
+    .title h2 {
+      font-size: 12px;
+    }
+    .list-group-item-action {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width:500px){
+    .about_eternal_all {
+      width: 90%;
+      margin-top: 3%;
+      margin-left:3%;
+    }
+    .col-4{
+      width: 25%;
+    }
+    .col-8{
+      width: 75%;
+    }
+    .title_text {
+      font-size: 12px;
+    }
+    .about_text {
+      font-size: 10px;
+      line-height: normal;
+    }
   }

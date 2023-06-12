@@ -456,3 +456,29 @@ text-decoration: none;
     outline: none;
     box-shadow:none;
   }
+  @media screen and (max-width:1200px){
+    .about_buy {
+      width: 70%;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width:1024px){
+    .about_buy {
+      width: 80%;
+      margin-top: 6%;
+    }
+
+  }
+  @media screen and (max-width:768px){
+    .nav-item {
+      width: 40%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width:500px){
+    .about_buy {
+      width: 96%;
+    }
+
+  }
