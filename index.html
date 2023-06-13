@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="index_style.css">
 </head>
 <body> 
@@ -200,6 +202,7 @@
         <div class="main_Best_seller_top">
             <div class="main_Best_seller_top_left">
                 <h2 class="main_Best_seller_title">Best seller</h2>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <figure class="main_Best_seller_top_left_pic">
                     <img src="images/main_Best_seller_top_left_pic.jpg" alt="">
                     <h3 class="top_left_pic_name">Natural Denim Jumpsuit</h3>
@@ -208,34 +211,47 @@
                     </figcaption>
                 </figure>
             </div>
+            <script>
+                AOS.init();
+               </script>
+            </div>
             <div class="main_Best_seller_top_right">
-                <figure class="main_Best_seller_top_right_pic">
-                    <img src="images/main_Best_seller_top_right_pic.jpg" alt="">
-                    <h3 class="top_right_pic_name">Timeless White Shirt</h3>
-                    <figcaption class="top_right_pic_about">純棉輕柔的觸感，能夠抵抗外部的濕氣和熱度<br>
-                        保持乾爽與舒適
-                    </figcaption>
-                </figure>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <figure class="main_Best_seller_top_right_pic">
+                        <img src="images/main_Best_seller_top_right_pic.jpg" alt="">
+                        <h3 class="top_right_pic_name">Timeless White Shirt</h3>
+                        <figcaption class="top_right_pic_about">純棉輕柔的觸感，能夠抵抗外部的濕氣和熱度<br>
+                            保持乾爽與舒適
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
         <div class="main_Best_seller_bottom">
             <div class="main_Best_seller_bottom_left">
-                <figure class="main_Best_seller_bottom_left_pic">
-                    <img src="images/main_Best_seller_bottom_left_pic.jpg" alt="">
-                    <h3 class="bottom_left_pic_name">Gentle Moonlight</h3>
-                    <figcaption class="bottom_left_pic_about">由最新的環保材質製成，柔軟耐穿且抗皺性強<br>
-                        能有效阻擋外來異味，令皮膚更安心</figcaption>
-                </figure>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <figure class="main_Best_seller_bottom_left_pic">
+                        <img src="images/main_Best_seller_bottom_left_pic.jpg" alt="">
+                        <h3 class="bottom_left_pic_name">Gentle Moonlight</h3>
+                        <figcaption class="bottom_left_pic_about">由最新的環保材質製成，柔軟耐穿且抗皺性強<br>
+                            能有效阻擋外來異味，令皮膚更安心</figcaption>
+                    </figure>
+                </div>
             </div>
             <div class="main_Best_seller_bottom_right">
-                <figure class="main_Best_seller_bottom_right_pic">
-                    <img src="images/main_Best_seller_bottom_right_pic.jpg" alt="">
-                    <h3 class="bottom_right_pic_name">Silk Bloom</h3>
-                    <figcaption class="bottom_right_pic_about">穿梭在充滿溫暖與優雅氛圍中，柔軟輕巧<br>
-                        令肌膚得到更舒適的體驗</figcaption>
-                </figure>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <figure class="main_Best_seller_bottom_right_pic">
+                        <img src="images/main_Best_seller_bottom_right_pic.jpg" alt="">
+                        <h3 class="bottom_right_pic_name">Silk Bloom</h3>
+                        <figcaption class="bottom_right_pic_about">穿梭在充滿溫暖與優雅氛圍中，柔軟輕巧<br>
+                            令肌膚得到更舒適的體驗</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
+        <script>
+            AOS.init();
+           </script>
         <div class="best_seller_bottom">
             <h2 class="main_Best_seller_bottom_title" id="first">Comfortable</h2>
             <h2 class="main_Best_seller_bottom_title" id="second">Pure Cotton</h2>

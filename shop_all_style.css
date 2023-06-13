@@ -554,7 +554,7 @@ text-decoration: none;
   .shop_all_nav_rwd{
     display: block;
     position: sticky;
-    top: 7%;
+    top: 55px;
   }
   .nav_category_rwd {
     font-size: 12px;

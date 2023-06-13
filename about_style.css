@@ -447,7 +447,7 @@ text-decoration: none;
   }
   .about_text{
     color: #D9D7CC;
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 10%;
   }
   .work_btn{
@@ -475,10 +475,10 @@ text-decoration: none;
       margin-left:3%;
     }
     .title h2 {
-      font-size: 12px;
+      font-size: 14px;
     }
     .list-group-item-action {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   @media screen and (max-width:500px){
@@ -493,11 +493,39 @@ text-decoration: none;
     .col-8{
       width: 75%;
     }
+    .title h2 {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .list-group-item-action {
+      font-size: 12px;
+      font-weight: 500;
+    }
     .title_text {
       font-size: 12px;
+      font-weight: 400;
+      font-weight: 500;
     }
     .about_text {
-      font-size: 10px;
+      font-size: 12px;
       line-height: normal;
+    }
+    .about_text_indent {
+      text-indent: 2em;
+    }
+    .about_text br {
+      display: none;
+    }
+  }
+  @media screen and (max-width:390px){
+    .about_eternal_all {
+      margin: auto;
+    }
+    .col-4 {
+      width: 27%;
+    }
+    .col-8 {
+      width: 73%;
+      padding: 1%;
     }
   }

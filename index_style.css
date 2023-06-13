@@ -1090,7 +1090,7 @@ text-decoration: none;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 2%;
 }
 .card{
   width: 32%;
@@ -1197,7 +1197,8 @@ text-decoration: none;
     background-size: 120px; 
   }
   .concept_store_pic_all {
-    padding: 20px 0 20px 0;
+    width: 85%;
+    padding: 8% 0 8% 0;
   }
   .concept_store_pic_outside{
     width: 100%;
